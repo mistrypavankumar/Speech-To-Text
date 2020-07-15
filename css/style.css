@@ -605,7 +605,7 @@ label {
 
     }
 
-  
+
 
     .butns .learn-btn {
         height: 50px;
@@ -867,6 +867,7 @@ label {
     background-color: transparent;
     margin-bottom: 30px;
     text-align: center;
+    padding: 20px;
 }
 
 .mobiles-down .apple-store .fa-mobile-alt {
@@ -893,11 +894,12 @@ label {
 .mobiles-down .windows-store {
     max-width: 362px;
     max-height: 92px;
+    padding: 10px;
 }
 
 .mobiles-down .windows-store p {
-    text-align: left;
-    padding: 0 0 0 30px;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 @media (max-width: 992px) {
