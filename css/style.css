@@ -498,7 +498,7 @@ label {
     font-weight: 600;
     padding: 9px;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 
 }
 
@@ -512,10 +512,11 @@ label {
     border-radius: 50px;
     border: 2px solid #53c5d5;
     padding: 10px 49px;
-    margin-right: 20px;
-    margin-left: 50px;
     margin-bottom: 30px;
     outline: none;
+    position: relative;
+    margin-left: 16%;
+
 }
 
 .butns .get-btn:hover {
@@ -589,7 +590,14 @@ label {
     z-index: 999;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 537px) {
+    .butns .get-btn {
+        max-width: 100%;
+        margin-left: -10%;
+    }
+}
+
+@media (min-width: 538px)and(max-width: 576px) {
     .content {
         text-align: center;
     }
@@ -604,8 +612,6 @@ label {
         height: 50px !important;
 
     }
-
-
 
     .butns .learn-btn {
         height: 50px;
@@ -638,17 +644,17 @@ label {
     }
 
     label {
-        margin-left: 8%;
         font-size: 40px;
         margin-bottom: 15px;
     }
 
     .col-10 {
         margin-left: 8%;
+        line-height: 1;
     }
 
     .butns {
-        margin-left: 8%;
+        margin-left: 15%;
     }
 }
 
@@ -656,7 +662,6 @@ label {
     .nav-list .menu {
         padding: 0 10px !important;
     }
-
 
 }
 
