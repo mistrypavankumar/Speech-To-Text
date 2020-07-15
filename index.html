@@ -45,8 +45,12 @@
                     <p>Having trouble in taking notes? Going through a fast lecture? Need to make a qucik list? Try our Speech to text converter to convert your live audio into text and copy it so that you can paste it wherever you want. Note: Our Speech to text converter is still under development and needs some time to work flawlessly. Click in the box below and start talking!</p>
 
                     <!-- Input area  section-->
-                    <label for="Speech Recognition">Speech Recognition</label>
-                    <input type="text" name="" id="speechToText" placeholder="Speak Something" onclick="record()">
+                    <div class="row">
+                        <div class="col">
+                            <label for="Speech Recognition" class="col-10 ">Speech Recognition</label>
+                            <input type="text" name="" id="speechToText" placeholder="Speak Something ......" onclick="record()" class="col-10 p-3">
+                        </div>
+                    </div>
 
                     <!-- Below is the script for voice recognition and conversion to text-->
                     <script>
@@ -61,13 +65,12 @@
                             recognition.start();
 
                         }
-
                     </script>
                     <!-- end of script -->
 
-                    <div class="butns">
-                        <button class="get-btn">GET IT NOW</button>
-                        <button class="learn-btn" href="#">LEARN MORE</button>
+                    <div class=" butns">
+                        <button class="get-btn col-4"> GET IT NOW</button>
+                        <button class="learn-btn col-4 my-4" href="#">LEARN MORE</button>
                     </div>
                 </div>
             </div>
@@ -370,7 +373,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="footer main-container">
         <!--Footer-->
@@ -395,6 +397,4 @@
     <script src="js/fixed-header.js"></script>
     <script src="plugin/background-video/jquery.background-video.js"></script>
     <script src="js/bkg-video-hide.js"></script>
-</body>
-
-</html>
+</body></html>

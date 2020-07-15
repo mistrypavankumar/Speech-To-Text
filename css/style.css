@@ -179,6 +179,10 @@ textarea {
     font-size: 100%;
     /* 1 */
     line-height: 1.15;
+    padding: 0.5rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
     /* 1 */
     margin: 0;
     /* 2 */
@@ -489,6 +493,15 @@ button {
     margin-bottom: 90px;
 }
 
+label {
+    color: #fff;
+    font-weight: 600;
+    padding: 9px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
 .butns .get-btn {
     font-family: Dosis-bold;
     font-size: 16px;
@@ -500,7 +513,15 @@ button {
     border: 2px solid #53c5d5;
     padding: 10px 49px;
     margin-right: 20px;
+    margin-left: 50px;
     margin-bottom: 30px;
+    outline: none;
+}
+
+.butns .get-btn:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: 0.5s;
 }
 
 .butns .learn-btn {
@@ -514,6 +535,13 @@ button {
     border: 2px solid #ffffff;
     padding: 10px 45px;
     margin-bottom: 30px;
+    outline: none;
+}
+
+.butns .learn-btn:hover {
+    background-color: #53c5d5;
+    transition: 0.5s;
+    border: 2px solid #53c5d5;
 }
 
 /*Nav*/
@@ -568,11 +596,22 @@ button {
 
     .butns {
         text-align: center;
+        margin-left: -8%;
+
     }
 
     .butns .get-btn {
-        margin-right: 0px !important;
+        height: 50px !important;
+
     }
+
+  
+
+    .butns .learn-btn {
+        height: 50px;
+    }
+
+
 }
 
 @media (max-width: 992px) {
@@ -597,12 +636,27 @@ button {
         text-align: center;
         padding: 10px 10px;
     }
+
+    label {
+        margin-left: 8%;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .col-10 {
+        margin-left: 8%;
+    }
+
+    .butns {
+        margin-left: 8%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .nav-list .menu {
         padding: 0 10px !important;
     }
+
 
 }
 
