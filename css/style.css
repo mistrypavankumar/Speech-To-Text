@@ -261,6 +261,8 @@ fieldset {
 
 legend {
     box-sizing: border-box;
+   
+    outline: none;
     /* 1 */
     color: inherit;
     /* 2 */
