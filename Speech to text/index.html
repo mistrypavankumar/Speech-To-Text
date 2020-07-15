@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Scarica la nostra Landing Page per le Applicazioni Mobile e utilizzatela per le App che avete creato. La nostra Landing Page e completamente gratis.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="font/dosis-regular/font.css">
+    <link rel="stylesheet" type="text/css" href="font/dosis-bold/font.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Owl Carousel-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	<!--Font Awsome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!--Background-video-->
+	<link rel="stylesheet" type="text/css" href="plugin/background-video/jquery.background-video.css">
+    <title>Speech to text tool</title>
+  </head>
+  <body>           
+	    <div class="main-container ">
+	      <div class="banner">
+	          <div class="row">
+	            <div class="col-12 logo">
+	                <img src="image/logo.png" class="img-fluid" alt="">
+	            </div>
+	          </div>
+	          <div class="row"> 
+	              <div class="col-lg-6 banner-content ">
+	                  <img src="image/iphone-slider-1.jpg" class="img-fluid" alt="">
+	              </div> 
+	              <div class="col-lg-6 content">
+	                <h1>Speech to text</h1>  
+					<h2>Ultimate webpage to convert speech into text </h2> 
+					 
+	                <p>Having trouble in taking notes? Going through a fast lecture? Need to make a qucik list? Try our Speech to text converter to convert your live audio into text and copy it so that you can paste it wherever you want. Note: Our Speech to text converter is still under development and needs some time to work flawlessly. Click in the box below and start talking!</p>
+					
+    <!-- Input area -->
+    <label for="Speech Recognition">Speech Recognition</label>
+    <input type="text" name="" id="speechToText" placeholder="Speak Something" onclick="record()">
+
+    <!-- Below is the script for voice recognition and conversion to text-->
+    <script>
+        function record() {
+            var recognition = new webkitSpeechRecognition();
+            recognition.lang = "en-GB";
+
+            recognition.onresult = function(event) {
+                // console.log(event);
+                document.getElementById('speechToText').value = event.results[0][0].transcript;
+            }
+            recognition.start();
+
+        }
+    </script>
+    <!-- end of script -->
+
+					<div class="butns">
+	                  <button class="get-btn">GET IT NOW</button> 
+	                  <button class="learn-btn" href="#">LEARN MORE</button> 
+	                </div>
+	              </div>    
+	          </div>     
+	      </div>  
+	    </div> 
+	    <!--Navbar Desktop-->
+	    <div class="main-container desktop-nav nav-bkg-color hidden-md-down to d-none d-lg-block">
+	      <div class="inside-container nav-contain">
+	        <nav class="navbar navbar-expand-lg navbar-light">
+	 
+	            <div class="navbar-nav nav-list ml-auto">
+	              <a class="menu" href="#">Home</a>
+	              <a class="menu" href="#">Features</a>
+	              <a class="menu" href="#">Description</a>
+	              <a class="menu" href="#">Team</a>
+	              <a class="menu-last" href="#">Contact</a>                      
+	            </div>
+	        </nav>
+	      </div>
+	    </div> 
+	    <!--Navbar Mobile-->
+	    <div class="main-container mobile-nav nav-bkg-color hidden-lg-up to d-lg-none">
+	      <div class="inside-container nav-contain">
+	        <nav class="navbar navbar-expand-lg navbar-light">
+
+	          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	          </button>
+	          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	            <div class="navbar-nav nav-list ml-auto">
+	              <a class="menu" href="#">Home</a>
+	              <a class="menu" href="#">Features</a>
+	              <a class="menu" href="#">Download</a>
+	              <a class="menu" href="#">Description</a>
+	              <a class="menu" href="#">Screenshots</a>
+	              <a class="menu" href="#">Team</a>
+	              <a class="menu" href="#">Reviews</a>
+	              <a class="menu" href="#">Pricing</a>
+	              <a class="menu-last" href="#">Contact</a>                      
+	            </div>
+	          </div>
+	        </nav>
+	      </div>
+	    </div> 
+	    <!--Welcome-->  
+	    <div class="main-container"> 
+	        <div class="inside-container">
+	          <div class="row welcome-content">
+	          	<div class="col-12">
+	                <h2>Welcome to <span style="color: #53c5d5;">Text to Speech</span></h2>
+	                <hr>
+	                <p>Your destination to a hazzle free speech to text web application</p>
+	            </div>
+	          </div>
+	          <div class="row welcome-colum">
+	            <div class="col-lg-4 star-hover">
+	              <div class="row">
+	                <div class="col-3 icon-img">
+	                  <i class="fas fa-star-of-life"></i>
+	                </div>  
+	                <div class="col-9">
+	                  <h3>Easy To Use</h3>
+	                  <p>Just click on the textbox in the top of the page, click allow for your browser to let us hear you voice and start talking. </p>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-lg-4">
+	              <div class="row star-hover">
+	                <div class="col-3 icon-img">
+	                 <i class="fas fa-sitemap"></i>
+	                </div>  
+	                <div class="col-9">                  
+	                  <h3>Secure</h3>
+	                  <p>Unlike other speech to text engines, we are completely secure and we guarantee you that we are not storing any of your data.</p>
+	                </div>
+	              </div>    
+	            </div>
+	            <div class="col-lg-4 star-hover">
+	              <div class="row content-colum">
+	                <div class="col-3 icon-img">
+	                  <i class="far fa-lightbulb"></i>
+	                </div>  
+	                <div class="col-9">                   
+	                  <h3>Utility</h3>
+	                  <p>Our speech to text tool is really handy when it comes to quickly take down notes. You can use in taking notes and quickly writing a text.</p>
+	                </div>  
+	               </div> 
+	            </div>
+	          </div>
+	        </div>
+	    </div><!--Features-->
+	    <div class="main-container features-sec">
+	    	<div class="inside-container features-row">
+	    		<div class="row">
+	    			<div class="col-lg-8">
+	    				<div class="row detail-features">
+	        				<div class="col-12">
+		        				<h2>Excellent utilities</h2>
+		        				<hr>
+		        				<p>Our text to speech tool is really good in it's aesthetics at the same time looking minimal. There are a number of reasons to use our tool.</p>
+		        			</div>	
+	    				</div>
+	    				<div class="row features-cols">
+	        				<div class="col-12">
+	        					<div class="row">
+	            					<div class="col-lg-6 services">
+	            						<div class="row">
+	            							<div class="col-3 icon-img">
+	            								<i class="fas fa-star"></i>
+	            							</div>
+	            							<div class="col-9">
+	            								<h3>Minimalistic Design</h3>
+	            								<p>We found out what was actually needed for the end users. The purpose of our tool is to just convert speech to text. So we made is as simple as possible. </p>
+	            							</div>
+	            						</div>
+	            					</div>
+	            					<div class="col-lg-6 services">
+	            						<div class="row">
+		            						<div class="col-3 icon-img">
+		            							<i class="fas fa-heart"></i>
+		            						</div>
+		            						<div class="col-9">
+		            							<h3>User Friendly </h3>
+		            							<p>Being as simple as it is, our text to speech is really easy to use. Just head over to the home section, click on the chatbox and let the magic happen! </p>	
+		            						</div>
+		            					</div>	
+	            					</div>
+	            				</div>
+	            				<div class="row">
+	            					<div class="col-lg-6 services">
+	            						<div class="row">
+		            						<div class="col-3 icon-img">
+		            							<img src="image/check.svg" alt="">	
+		            						</div>
+		            						<div class="col-9">
+		            							<h3>Super Clean</h3>
+		            							<p>There are a few tools like this online which are filled with advertisements, dark patterns asking you to login or register to use. We are providing a free text to speech tool which does not require you to sign in. </p>	
+		            						</div>
+	            						</div>
+	            					</div>
+	            					<div class="col-lg-6 services">
+	            						<div class="row">
+		            						<div class="col-3 icon-img">
+		            							<i class="fas fa-sitemap"></i>
+		            						</div>
+		            						<div class="col-9">
+		            							<h3>Reliability </h3>
+		            							<p>We don't spy you or we don't listen to whatever you convert. This is because your privacy matters for us unlike many voice assistants out there which are constantly recording your voice without any notice! </p>	
+		            						</div>
+		            					</div>	
+	            					</div>  
+	            				</div>          						
+	        				</div>
+	        			</div>
+	    			</div>
+	    			<div class="col-lg-4 phone-col">
+	    				<img src="image/phone.png" class="img-fluid text-center" alt="">
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div><!--Download-->
+	    <div class="main-container downl-sec">
+	    	<div class="inside-container">
+	    		<div class="row">
+	    			<div class="col-12 detail-down">
+	    				<h2>We will soon be available on your mobile stores/</h2>
+	    				<hr>
+	    				<p>Right now we are only focusing mainly on our webpage. But we assure you we will be available in your mobile stores soon.</p>
+	    			</div>
+	    		</div>
+	    		<div class="row mobiles-down">
+	    			<div class="col-lg-4">
+	    				<a href="" class="apple-store">
+	    					<i class="fas fa-mobile-alt"></i><p><span style="font-size: 20px;">Coming soon to</span> <br /><span style="font-size: 40px;">App Store</span></p>
+	    				</a>
+	    			</div>
+	    			<div class="col-lg-4">
+	    				<a href="" class="google-store">
+	    					<object data="image/play-store.svg" type="image/svg+xml" id="play-store" class="play-store" name="play-store"></object><p><b><span style="font-size: 24px;">Get it soon on <br/>GOOGLE PLAY</span></b></p>
+	    				</a>
+	    			</div>
+	    			<div class="col-lg-4">
+	    				<a href="" class="windows-store">
+	    					<object data="image/windows-store.svg" type="image/svg+xml" id="windows-store" class="windows-store" name="windows-store"></object>
+	    					<p><b><span style="font-size: 21px;">Available in future for</span></b> <br /><span class="win-phon">Windows Phone</span></p>
+	    				</a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="inside-container"><!--Why us-->
+	    	<div class="row chose">
+	    		<div class="col-lg-6 iphones-5s">
+	    			<img src="image/iphons-5.png" class="img-fluid " alt="">
+	    		</div>
+	    		<div class="col-lg-6 chose-detail">
+	    			<h2>Why Choose Us?</h2>
+	    			<hr>
+	    			<p class="desc">As we have mentioned earlier, it is better to switch to us if privacy is a concern for you. Many speech to text tools record your audio and store them in their servers for their training. In the worst case your audio can even be accessed by hackers. Hence it's really wise to use our tool instead.</p>
+					<p><img src="image/chose-icon-1.svg" alt="">Minimalistic design makes our tool easy to use</p>
+					<p><i class="fas fa-gift"></i>Speech to text is a gift when you're in a class. Focus on the class and let our tool take the notes for you.</p>
+					<p><i class="fas fa-cogs"></i>We mainly focused on the utility ignoring other unimportant things like registration.</p>
+					<p><i class="fas fa-folder-open"></i>Your privacy is our concern</p>
+					<p><i class="far fa-thumbs-up"></i>Do share your experiences with the developers in the links given under their names.</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    	    </div>
+	    <div class="main-container"><!--Video-->
+	    	<div class="row">
+				<div class="col-12 video-row element-with-video-bg jquery-background-video-wrapper">
+					<div class="video-sec"></div>
+					<div class="row detail-video">
+	        			<div class="col-12">
+					        <h2>Watch How it Works</h2>
+	        				<hr>
+	        				<p>Check out this video to understand how to use speech to text too.</p>
+					    </div>
+		    		</div>  
+					<video data-bgvideo="true" class="my-background-video jquery-background-video" loop muted playsinline poster="image/background-video.jpg">
+						<source src="video/web-domus-app.mp4" type="video/mp4">
+					</video>
+				</div>    			
+			</div>
+	    </div>
+	    <div class="main-container team-section"><!--Team-->
+	    	<div class="inside-container">
+	    		<div class="row">
+	    			<div class="col-12 detail-team">
+	    				<h2>Our Awesome Team</h2>
+	    				<hr>
+	    				<p>Meet the people behind this project.</p>
+	    			</div>
+	    		</div>
+				<div class="row team-members">
+					<div class="col-lg-3">
+						<div class="team-hover">
+							<img src="image/team-member.png" class="img-fluid" alt="">
+							<div class="loop-hover">
+								<img src="image/loop-team.png" alt="">
+							</div>
+						
+						</div>
+						<h3>D Venkata Sai Kamal</h3>
+						<p class="team-role">Developer</p>
+						<p class="team-desc">A tech enthusiast and an AI, ML geek. Passionate about Datascience and currently on the journey to become a full stack developer. </p>
+						<div class="icon-team">
+							<a href="#"><i class="fab fa-facebook-square"></i></a>
+							<a href="#"><i class="fab fa-twitter-square"></i></a>
+							<a href="#"><i class="fab fa-pinterest-square"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>	
+					<div class="col-lg-3">
+						<div class="team-hover">
+							<img src="image/team-member.png" class="img-fluid" alt="">
+							<div class="loop-hover">
+								<img src="image/loop-team.png"  alt="">
+							</div>
+						</div>
+						<h3>Mistry Pavan Kumar</h3>
+						<p class="team-role">Developer</p>
+						<p class="team-desc">A front end wizard. Curious in learning in new technologies. App development is my game. Self learner with a passion over learning.</p>
+						<div class="icon-team">
+							<a href="#"><i class="fab fa-facebook-square"></i></a>
+							<a href="#"><i class="fab fa-twitter-square"></i></a>
+							<a href="#"><i class="fab fa-pinterest-square"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</div>
+					
+					</div>								
+				</div>
+	    	</div>
+	    </div>
+	  
+	    <div class="main-container contact-bckg"><!--Contact-->
+	        <div class="inside-container">
+	          <div class="row">
+	            <div class="col-12 contact-title">
+	              <h2>Get In Touch</h2>    
+	              <hr>
+	              <p>Have any suggestions to improve our speech to text tool? Got any doubts how we came up with this? Reach out to us!</p>
+	            </div>   
+	        </div>
+	        <div class="row"></div>
+	            <div class="cpy-right text-center py-5" id="contact">
+	                <h2>Contact Details</h2>
+	                <p>Show us your support by reaching us at our social media accounts. Any suggestions are accepted.</p>
+	                <p class="contct"><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana – India</p>
+	                <p class="contct"><img src="image/phone-icon.svg" alt=""> <a href="#">+91 9177114722</a></p>
+
+	                <p class="contct"><i class="fas fa-envelope"></i>  <a href="#">teamintrospectors@gmail.com</a></p>
+	            </div>
+	        </div>            
+	      </div>
+	    </div>
+	   
+	    <div class="footer main-container"><!--Footer-->
+	        <div class="inside-container footer-content">
+	            <div class="social-icons">
+	              	<a href=""><span><i class="fab fa-twitter"></i></span></a>  <a href="#"><span><i class="fab fa-facebook-f"></i></span></a>  <a href="#"><span><i class="fab fa-github-alt"></i></span></a>  <a href="#"><span><i class="fab fa-pinterest-p"></i></span></a>  <a href="#"><span><i class="fab fa-vimeo-v"></i></span></a> <a href="#"><span><i class="fab fa-dribbble"></i></span></a> <a href="#"><span><i class="fab fa-linkedin-in"></i></span></a>  <a href="#"><span><i class="fab fa-google-plus-g"></i></span></a>  
+	            </div> 
+	            <div class="copyright">
+	              © 2020 All Rights Reserved.<br/> Created by <a href="https://www.youtube.com/channel/UCQV5B4b-PIXkzQq7XUSR_2A"><strong>Team Introspectors</strong></a>
+	            </div>
+	        </div>
+	    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/fixed-header.js"></script>
+    <script src="plugin/background-video/jquery.background-video.js"></script>
+    <script src="js/bkg-video-hide.js"></script>     
+  </body>
+</html>
