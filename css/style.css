@@ -1256,7 +1256,7 @@ label {
 
 .video-row {
     width: 100%;
-    height: 1200px;
+    height: 150vh;
     border: 1px solid black;
     background-color: #000000ab;
 }
