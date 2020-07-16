@@ -692,6 +692,7 @@ label {
     line-height: 26px;
     padding: 0 20px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-list .menu:hover {
@@ -706,6 +707,7 @@ label {
     line-height: 26px;
     padding-left: 10px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-list .menu-last:hover {
