@@ -13,6 +13,8 @@ html {
     /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
+    scroll-behavior: smooth;
+    transition: 1s;
 }
 
 /* Sections
