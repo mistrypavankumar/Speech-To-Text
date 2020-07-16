@@ -35,7 +35,7 @@
         </div>
     </div>
     <div style="display:none;" id="myDiv" class="animate-bottom">
-        <div class="main-container ">
+        <div class="main-container " id="home">
             <div class="banner">
                 <div class="row">
                     <div class="col-12 logo">
@@ -77,8 +77,8 @@
                         </script>
                         <!-- end of script -->
 
-                        <div class=" butns my-4">
-                            <button class="get-btn col-6"> <span class="textget">GET IT NOW</span></button>
+                        <div class=" butns my-4" id="butns">
+                            <button class="get-btn col-6" href="#download"> <span class="textget">GET IT NOW</span></button>
                         </div>
                     </div>
                 </div>
@@ -90,11 +90,11 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
 
                     <div class="navbar-nav nav-list ml-auto">
-                        <a class="menu" href="#">Home</a>
-                        <a class="menu" href="#">Features</a>
-                        <a class="menu" href="#">Description</a>
-                        <a class="menu" href="#">Team</a>
-                        <a class="menu-last" href="#">Contact</a>
+                        <a class="menu" href="#home">Home</a>
+                        <a class="menu" href="#features">Features</a>
+                        <a class="menu" href="#description">Description</a>
+                        <a class="menu" href="#team">Team</a>
+                        <a class="menu-last" href="#contact">Contact</a>
                     </div>
                 </nav>
             </div>
@@ -109,22 +109,22 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav nav-list ml-auto">
-                            <a class="menu" href="#">Home</a>
-                            <a class="menu" href="#">Features</a>
-                            <a class="menu" href="#">Download</a>
-                            <a class="menu" href="#">Description</a>
+                            <a class="menu" href="#home">Home</a>
+                            <a class="menu" href="#features">Features</a>
+                            <a class="menu" href="#download">Download</a>
+                            <a class="menu" href="#description">Description</a>
                             <a class="menu" href="#">Screenshots</a>
-                            <a class="menu" href="#">Team</a>
+                            <a class="menu" href="#team">Team</a>
                             <a class="menu" href="#">Reviews</a>
                             <a class="menu" href="#">Pricing</a>
-                            <a class="menu-last" href="#">Contact</a>
+                            <a class="menu-last" href="#contact">Contact</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
         <!--Welcome-->
-        <div class="main-container">
+        <div class="main-container" id="welcome">
             <div class="inside-container">
                 <div class="row welcome-content">
                     <div class="col-12">
@@ -171,7 +171,7 @@
             </div>
         </div>
         <!--Features-->
-        <div class="main-container features-sec">
+        <div class="main-container features-sec" id="features">
             <div class="inside-container features-row">
                 <div class="row">
                     <div class="col-lg-8">
@@ -242,7 +242,7 @@
             </div>
         </div>
         <!--Download-->
-        <div class="main-container downl-sec">
+        <div class="main-container downl-sec download" id="download">
             <div class="inside-container">
                 <div class="row">
                     <div class="col-12 detail-down">
@@ -275,7 +275,7 @@
         </div>
         <div class="inside-container">
             <!--Why us-->
-            <div class="row chose">
+            <div class="row chose" id="description">
                 <div class="col-lg-6 iphones-5s">
                     <img src="image/iphons-5.png" class="img-fluid " alt="">
                 </div>
@@ -309,7 +309,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-container team-section">
+        <div class="main-container team-section" id="team">
             <!--Team-->
             <div class="inside-container">
                 <div class="row">
@@ -355,7 +355,7 @@
             </div>
         </div>
 
-        <div class="main-container contact-bckg">
+        <div class="main-container contact-bckg" id="contact">
             <!--Contact-->
             <div class="inside-container">
                 <div class="row">
@@ -366,7 +366,7 @@
                     </div>
                 </div>
                 <div class="row"></div>
-                <div class="cpy-right text-center py-5" id="contact">
+                <div class="cpy-right text-center py-5">
                     <h2>Contact Details</h2>
                     <p>Show us your support by reaching us at our social media accounts. Any suggestions are accepted.</p>
                     <p class="contct"><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana – India</p>
@@ -378,8 +378,11 @@
         </div>
 
         <div class="footer main-container">
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
             <!--Footer-->
-            <div class="inside-container footer-content">
+            <div class="inside-container footer-content" id="contact">
                 <div class="social-icons">
                     <a href=""><span><i class="fab fa-twitter"></i></span></a> <a href="#"><span><i class="fab fa-facebook-f"></i></span></a> <a href="#"><span><i class="fab fa-github-alt"></i></span></a> <a href="#"><span><i class="fab fa-pinterest-p"></i></span></a> <a href="#"><span><i class="fab fa-vimeo-v"></i></span></a> <a href="#"><span><i class="fab fa-dribbble"></i></span></a> <a href="#"><span><i class="fab fa-linkedin-in"></i></span></a> <a href="#"><span><i class="fab fa-google-plus-g"></i></span></a>
                 </div>
