@@ -147,10 +147,39 @@ body {
     text-align: center;
 }
 
-License Terms
-/**
- * Render the `main` element consistently in IE.
- */
+
+/* Back to top button */
+
+#back-to-top {
+    position: fixed;
+    background: #00d18f;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+    opacity: 0;
+}
+
+#back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+}
+
+#back-to-top:hover {
+    background: #00eda2;
+}
+
 
 main {
     display: block;

@@ -24,3 +24,18 @@ function bigImg(x) {
 function normalImg(x) {
     x.style.height = "100px";
 }
+
+
+// Back to top button
+var btt = document.getElementById("back-to-top"),
+    body = document.body,
+    docElem = document.documentElement,
+    offset = 100,
+    scrollPos;
+
+
+window.addEventListener("scroll", function (event) {
+    scrollPos = body.scrollTop || docElem.scrollTop;
+
+    btt.className = (scrollPos > offset) ? "visible" : "";
+});
